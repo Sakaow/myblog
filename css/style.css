@@ -1,0 +1,36 @@
+@import url(fonts.css);
+@import url(header.css);
+@import url(content.css);
+@import url(footer.css);
+@import url(page.css);
+
+/* Global setting */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(97, 97, 97, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--dark);
+}
+
+body {
+  font-family: Sarabun, Roboto, sans-serif;
+  background: #fff3e6;
+  margin: 30px 50px;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}

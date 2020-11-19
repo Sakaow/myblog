@@ -1,0 +1,36 @@
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 3rem;
+  background: #d8c3a5;
+  font-weight: bold;
+}
+
+.footer span {
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: large;
+}
+
+.footer a:nth-child(1) {
+  color: #2f2fa2;
+}
+
+.footer a:nth-child(2) {
+  color: rgb(29, 161, 242);
+}
+
+.footer a:nth-child(3) {
+  color: #8c228c;
+}
+
+.footer a:nth-child(4) {
+  color: #1520a6;
+}
