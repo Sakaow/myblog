@@ -14,7 +14,7 @@
   font-family: Roboto, sans-serif;
   text-decoration: none;
   padding-left: 20px;
-  color: 44318d;
+  color: #5e34eb;
   letter-spacing: 2px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .navbar a:hover {
-  background: var(--dark);
+  background: #5680e9;
   color: var(--light);
   transition: all 0.3s ease-in-out;
 }

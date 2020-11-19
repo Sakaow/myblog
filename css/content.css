@@ -4,21 +4,23 @@
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
+  box-shadow: var(--shadow);
+}
+
+.button:hover {
+  background: #5680e9;
+  color: var(--light);
+  transition: color 0.3s ease-in-out;
 }
 
 img {
   max-width: 100%;
 }
 
-.wrapper-content {
-  display: grid;
-  grid-gap: 20px;
-}
-
 /* Showcase container */
 .showcase {
   display: flex;
-  background: url(../images/jared-rice-8w7b4SdhOgw-unsplash.jpg);
+  background: url(../images/cole-allen-Lqv3cjyTMS8-unsplash.jpg);
   height: 40vh;
   background-size: cover;
   background-position: center;
@@ -26,18 +28,19 @@ img {
   margin-bottom: 1rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   box-shadow: var(--shadow);
 }
 
 .showcase h1 {
   font-size: 5rem;
-  margin-bottom: 0;
+  margin: 10px;
   color: var(--light);
 }
 
 .showcase h2 {
   font-size: 3rem;
+  margin: 10px;
   color: var(--light);
 }
 
@@ -46,3 +49,62 @@ img {
 }
 
 /* Cards section */
+.wrapper-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-classes {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+/* Newsletter */
+.newsletter {
+  background: url(../images/carl-newton-iX7WedkjpUY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.action-call {
+  position: absolute;
+  color: var(--light);
+  width: 100%;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+  letter-spacing: 3px;
+}
+
+.action-call h2 {
+  margin: 20px 0;
+}
+
+.action-call input {
+  width: 350px;
+  padding: 10px;
+  background-color: var(--light);
+  border: none;
+  z-index: 1;
+}
+
+.action-call button {
+  width: auto;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  background-color: var(--primary);
+}
+
+.action-call button:hover {
+  cursor: pointer;
+  background: var(--dark);
+  color: var(--light);
+  transition: all 0.3s ease-in-out;
+}
