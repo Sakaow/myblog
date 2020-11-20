@@ -3,6 +3,7 @@
 @import url(content.css);
 @import url(footer.css);
 @import url(page.css);
+@import url(article.css);
 
 /* Global setting */
 :root {
@@ -20,7 +21,7 @@ html {
 body {
   font-family: Sarabun, Roboto, sans-serif;
   background: #fff3e6;
-  margin: 30px 50px;
+  margin: 0 50px 0;
   line-height: 1.5;
 }
 
@@ -47,6 +48,10 @@ body {
     font-size: 2.5rem;
   }
 
+  .showcase h1 h2 {
+    padding: auto;
+  }
+
   .wrapper-cards {
     grid-template-columns: 1fr;
   }
@@ -54,6 +59,23 @@ body {
   .btn {
     display: block;
     text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper-cards {
+    grid-template-columns:
+      "showcase"
+      "card-classess";
+  }
+
+  .showcase {
+    font-size: 1rem;
+  }
+
+  .showcase h1 h2 {
+    padding: auto;
     margin: auto;
   }
 }
