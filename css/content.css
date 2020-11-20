@@ -21,11 +21,10 @@ img {
 .showcase {
   display: flex;
   background: url(../images/cole-allen-Lqv3cjyTMS8-unsplash.jpg);
-  height: 40vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   padding: 3rem;
-  /* margin-bottom: 1rem; */
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -34,16 +33,20 @@ img {
 
 .showcase h1 {
   font-size: 5rem;
-  margin: 10px;
+  margin: 0;
   padding: 20px;
   color: var(--light);
 }
 
 .showcase h2 {
   font-size: 3rem;
-  margin: 10px;
+  margin: 0px;
   padding: 20px;
   color: var(--light);
+}
+
+.showcase p {
+  font-size: 2rem;
 }
 
 .showcase span {
@@ -54,7 +57,7 @@ img {
 .wrapper-cards {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .card-classes {
