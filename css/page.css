@@ -47,6 +47,12 @@
   border-radius: 5px;
 }
 
+.block-quote {
+  color: #400de9;
+  background-color: rgba(217, 210, 208, 0.5);
+  border-radius: 5px;
+}
+
 .author-article {
   display: flex;
   align-items: center;

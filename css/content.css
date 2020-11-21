@@ -49,7 +49,11 @@ img {
   font-size: 2rem;
 }
 
-.showcase span {
+.showcase .brand {
+  color: #5e34eb;
+}
+
+.showcase .blog {
   color: #5680e9;
 }
 
