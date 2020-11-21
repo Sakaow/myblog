@@ -1,11 +1,67 @@
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+.article-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  font-size: 1.18rem;
+  background-color: var(--light);
 }
 
-hr.line1 {
-  border: 2px dashed #501b1d;
+.article-page {
+  display: block;
+  padding: 0 60px;
+  box-shadow: var(--shadow);
+}
+
+.article-sub .topic {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.article-sub .card-date {
+  display: block;
+  font-family: monospace;
+  color: #501b10;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.article-sub a {
+  text-decoration: none;
+  color: #5680e9;
+  font-weight: bold;
+}
+
+.card-date {
+  text-align: center;
+}
+
+.image-insert {
+  background: url(../images/alex-shaw-U7e8LzAn-0s-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+  min-width: 20vw;
+  position: relative;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+}
+
+.author-article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10%;
+  border-radius: 5px;
+  border-top: 2px solid var(--primary);
+}
+
+.author-details span {
+  font-size: large;
+  color: #5e34eb;
+}
+
+.author-img {
+  border-radius: 5%;
+  object-fit: cover;
 }
